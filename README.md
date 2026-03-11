@@ -483,3 +483,297 @@ Partition subset sum
 Minimum cost climbing stairs
 
 Maximum product subarray
+
+
+
+# Sum of N natural numbers
+
+n=int(input())
+sum=0
+for i in range(n+1):
+    sum=sum+i
+print(sum)
+
+output:
+input value: 10
+55
+
+# Factorial of number
+
+n=int(input())
+fact=1
+for i in range(1, n+1):
+    fact=fact*i
+print(fact)
+
+output: 
+input value: 5
+120
+
+# Prime number
+
+n=int(input("Enter a number: "))
+flag=0
+if n<=1:
+    flag=1
+for i in range(2,n):
+    if(n%i==0):
+        flag=1
+        break
+if flag==0:
+    print(f"{n} is Prime Number")
+else:
+    print(f"{n} is not Prime Number")
+
+
+n = int(input("Enter number: "))
+flag = 0
+
+if n <= 1:
+    flag = 1
+else:
+    for i in range(2, n//2 + 1):
+        if n % i == 0:
+            flag = 1
+            break
+
+if flag == 0:
+    print(n, "is Prime")
+else:
+    print(n, "is not Prime")
+
+output: 
+Enter a number: 47
+it is a prime
+
+# Armstrong number
+
+n=int(input("Enter a number: "))
+temp=n
+length=len(str(n))
+sum=0
+while n!=0:
+    rem=n%10
+    sum=sum+rem**length
+    n=n//10
+if temp==sum:
+    print("Armstrong Number")
+else:
+    print("Not Armstrong")
+    
+Output: 
+Enter a number: 153
+Armstrong Number
+
+
+# Palindrome number
+
+n=int(input("Enter a number"))
+temp=n
+rev=0
+while n!=0:
+    rem=n%10
+    rev=rev*10+rem
+    n=n//10
+if temp==rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+output:
+Enter a number: 1221
+Palindrome
+
+# Fibonacci series
+n=int(input())
+a,b=0,1
+print(a,b, end=" ")
+for i in range(2,n):
+    c=a+b
+    print(c,end=" ")
+    a,b=b,c
+    
+output:
+10
+0 1 1 2 3 5 8 13 21 34 
+
+#  Reverse number
+n=int(input())
+rev=0
+while n!=0:
+    rem=n%10
+    rev=rev*10+rem
+    n=n//10
+print(rev)
+
+output:
+123456
+654321
+
+# Sum of digits
+n=int(input())
+sum=0
+while n!=0:
+    rem=n%10
+    sum=sum+rem
+    n=n//10
+print(sum)
+
+output:
+124
+7
+
+# Count digits
+
+n=int(input())
+count=0
+while n!=0:
+    count=count+1
+    n=n//10
+print(count)
+
+output:
+12456
+5
+
+# GCD of two numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+while b != 0:
+   a,b=b,a%b
+
+print("HCF or GCD is:", a)
+
+output:
+Enter first number: 12
+Enter second number: 18
+HCF or GCD is: 6
+
+# LCM of two numbers
+
+a=int(input("Enter a number: "))
+b=int(input("Enter a number: "))
+
+temp_a=a
+temp_b=b
+while temp_b!=0:
+    temp_a,temp_b=temp_b,temp_a%temp_b
+gcd=temp_a
+lcm=(a*b)//gcd
+print("LCM: ",lcm)
+
+output:
+Enter a number: 4
+Enter a number: 6
+LCM:  12
+
+# Perfect number
+
+n=int(input("Enter a number: "))
+temp=n
+sum=0
+for i in range(1,n):
+    if(n%i==0):
+        sum=sum+i
+if sum==temp:
+    print("Perfect")
+else:
+    print("Not Perfect")
+
+output:
+Enter a number: 6
+Perfect
+
+# Multiplication table
+n=int(input("Enter a number: "))
+for i in range(1,11):
+    print(f"{n} * {i} = {n*i}")
+    
+output:
+Enter a number: 20
+20 * 1 = 20
+20 * 2 = 40
+20 * 3 = 60
+20 * 4 = 80
+20 * 5 = 100
+20 * 6 = 120
+20 * 7 = 140
+20 * 8 = 160
+20 * 9 = 180
+20 * 10 = 200
+
+# Power of number
+
+a=int(input("Enter a number: "))
+b=int(input("Enter Power: "))
+print(a**b)
+
+
+a=int(input("Enter a number: "))
+b=int(input("Enter Power: "))
+result=1
+for i in range(1,b+1):
+    result=result*a
+print(result)
+
+a = int(input())
+b = int(input())
+
+print(pow(a, b))
+
+output:
+Enter a number: 20
+Enter Power: 3
+8000
+
+# Check leap year
+year=int(input("Enter year: "))
+if ((year%4==0 and year%100!=0) or (year%400==0 or year%100==0)):
+    print("Leap Year")
+else:
+    print("Not Leap Year")
+
+Output:
+Enter year: 2004
+Leap Year
+
+# Simple calculator
+
+Output:
+
+# Sum of array elements
+
+Output:
+
+# Average of numbers
+
+Output:
+
+# Find max element
+
+Output:
+
+# Find min element
+
+Output:
+
+# Reverse array
+
+Output:
+
+# Check palindrome string
+
+Output:
+
+# Reverse string
+
+Output:
+
+# Count vowels
+
+Output:
+
+# Pattern printing
+
+Output:
